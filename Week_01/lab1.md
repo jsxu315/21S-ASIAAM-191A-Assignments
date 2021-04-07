@@ -1,12 +1,9 @@
-## Due Thursday 4/8:
+1. I created a new field, ASIAN_DENS, to represent the density of Asian populations in each county. ASIAN_DENS was calculated with the expression "ASIAN_POP" / "AREA_SQ_KM". 
 
-1.  Calculate a new field using already existing fields in the `CA_Counties_2019.shp` dataset or another dataset of your choosing.
+2. I selected these fields because hate crimes against Asian-Americans have been increasing recently, and comparing the number/density of hate crimes to density of Asians in a county could be helpful in finding regions with a disproportionate number of hate crimes to focus resources on. 
 
-2. Create a geojson named `lab1.geojson` and add it to your repository.
+3. Depending on how the data was collected, Asian (and other) populations could be undercounted. If the dataset was made by the Census bureau, some Asians (especially older/recent immigrants) might not be fluent in English or aware of the Census; they might also be wary of government officials and fear that their data could be used against them. 
 
-3. Create a new markdown file called `lab1.md` and explain the following:
-   -  What fields you used
-   -  Why you used these fields
-   -  What problems could the data set have
-4. Commit both `lab1.geojson` and `lab1.md` to your repository and push it to GitHub.
-5. Fill out this form so I can associate you with your GitHub repo: [https://forms.gle/J8kebeHEd5xbGaiRA](https://forms.gle/J8kebeHEd5xbGaiRA)
+When calculating each county's Asian density, what shows up on the map might be misleading for the purpose stated in #2. For example, just calculating the density in a county doesn't take into account the densities within the county. A county with a low overall density might have a few small, high-density Asian enclaves, and another county with the same density might have an Asian population distributed more evenly across it. The social dynamics and prevalence/causes of hate crimes could be different in the two, but the map wouldn't show this. 
+
+ 
