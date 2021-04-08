@@ -1,0 +1,37 @@
+/* html{
+    background-color:azure; 
+} */
+
+html, body {
+    padding: 5px;
+ }
+
+ body {
+     display: grid;
+     grid-template-rows: .1fr .30fr .60fr .05fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: "header" "main" "map"  "footer";
+     justify-content: center;
+ }
+
+ header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    justify-content: center;
+ }
+
+.main { /* selects a class */ 
+    display: grid;
+    grid-area: main;
+    background-color: aqua;
+}
+
+#map { /* an element with a map id */ 
+    grid-area: map;
+    height: 40vh;
+}
+
+#footer {
+    grid-area: footer;
+}
