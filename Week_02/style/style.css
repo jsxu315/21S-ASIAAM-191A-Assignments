@@ -1,12 +1,13 @@
-/* html{
-    background-color:azure; 
-} */
+html{
+    background-color:rgb(233, 233, 233); 
+} 
 
-html, body {
-    padding: 5px;
- }
 
  body {
+    padding: 20px;
+    /*background-color: rgb(204, 228, 255); */
+    font-family:"Lucida Console";
+
      display: grid;
      grid-template-rows: .1fr .30fr .60fr .05fr;
      grid-template-columns: 1fr;
@@ -15,23 +16,33 @@ html, body {
  }
 
  header {
+    font-family:Georgia; 
     grid-area: header;
     display: grid;
-    grid-template-columns: .2fr .6fr .2fr;
+    grid-template-columns: .5fr .5fr;
     justify-content: center;
  }
 
 .main { /* selects a class */ 
     display: grid;
     grid-area: main;
-    background-color: aqua;
+    background-color: rgb(224, 255, 255);
+    padding: 10px; 
+}
+
+.pfp img
+{
+    width: 15%; 
+    height: auto; 
 }
 
 #map { /* an element with a map id */ 
     grid-area: map;
-    height: 40vh;
+    height: 70vh;
+    padding: 10px; 
 }
 
 #footer {
     grid-area: footer;
+    padding: 10px;
 }
