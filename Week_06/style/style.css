@@ -1,0 +1,66 @@
+body{
+    background-color:rgb(233, 255, 248); 
+    display:grid;
+    grid-template-rows: .1fr .8fr .1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    /* one row inside each set of quotes */
+    grid-template-areas: ". header ." "mappanel contentspanel survey" ". footer .";
+}
+
+header{
+    grid-area: header; 
+    text-align: center; 
+}
+
+footer{
+    grid-area: footer; 
+    text-align:center; 
+}
+
+#map{
+    height:90vh;
+    grid-area: mappanel;
+} 
+
+#contents
+{
+    height: 50vh; 
+    grid-area: contentspanel; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "northernhemisphere southernhemisphere";
+}
+
+#northernhemisphere
+{
+    text-align: center; 
+    grid-area: northernhemisphere; 
+    display: grid; 
+    grid-template-rows: repeat(auto, 1fr); 
+}
+
+#southernhemisphere
+{
+    text-align: center; 
+    grid-area: southernhemisphere; 
+    display: grid; 
+    grid-template-rows: repeat(auto, 1fr); 
+}
+
+
+#survey {
+    grid-area: survey;
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 0%;
+    position: relative;
+}
+
+#survey iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
