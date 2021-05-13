@@ -24,7 +24,6 @@ footer{
 
 #contents
 {
-    height: 50vh; 
     grid-area: contentspanel; 
     display: grid;
     grid-template-columns: 1fr 1fr;
